@@ -9,9 +9,9 @@ body{
 }
 
 .btn-blue{
-  background-color: rgb(65, 65, 227);
+  background-color: rgb(0, 89, 255);
   color: white;
-  padding: 5px 10px;
+  padding: 10px 20px;
   border: none;
   cursor: pointer;
 }
@@ -115,6 +115,47 @@ h2{
 .blue-margin{
   border: 3px solid rgb(48, 106, 192);
 }
+
+.card{
+  border: 1px solid lightgrey;
+  width: calc(100% / 3);
+  margin-top: 30px;
+}
+
+.top-card{
+  text-align: center;
+  padding: 10px 0;
+}
+
+.main-card{
+  padding: 20px;
+  line-height: 35px;
+}
+
+ul{
+  list-style: none;
+  margin: 40px 0;
+}
+
+.main-card button{
+  margin-bottom: 20px
+}
+
+hr{
+  color: lightgrey;
+  width: 20%;
+  margin: 30px 0;
+}
+
+.text-bold-card{
+  font-weight: bold;
+}
+
+.fa-check{
+  color: rgb(31, 120, 236);
+}
+
+
 
 
 
