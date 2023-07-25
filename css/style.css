@@ -340,6 +340,22 @@ h3{
   padding: 10px;
 }
 
+.question-box{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  border-top: 1px solid grey;
+}
+
+.question-box-last{
+  border-bottom: 1px solid grey;
+}
+
+.fa-solid{
+  padding: 0 20px;
+}
+
+
 
 
 
