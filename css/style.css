@@ -162,7 +162,7 @@ hr{
   margin: 30px 0;
 }
 
-.text-bold-card{
+.text-bold{
   font-weight: bold;
 }
 
@@ -190,6 +190,29 @@ h3{
 
 .text-long-card p{
   margin-top: 30px;
+}
+
+
+
+.partner-box{
+  display: flex;
+}
+
+.partner-box img{
+  max-width: 60%;
+}
+
+.partner-box-text{
+  padding: 30px;
+}
+
+.partner-box-btn{
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.partner-box-text p{
+  padding: 30px 0;
 }
 
 
