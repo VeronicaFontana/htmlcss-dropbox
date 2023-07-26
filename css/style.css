@@ -17,7 +17,7 @@ body{
 
 .btn-blue{
   background-color: var(--btn-blue);
-  color: red;
+  color: white;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
@@ -42,9 +42,19 @@ a{
   padding: 30px 0 0 0;
 }
 
+.container{
+  max-width: 1000px;
+  width: 98%;
+  margin: 130px auto;
+}
 
+h3{
+  font-weight: bold;
+  font-size: 1.7rem;
+}
 
 /* HEADER */
+/* TOP-BAR */
 .top-bar{
   display: flex;
   justify-content: space-between;
@@ -55,23 +65,24 @@ a{
   max-width: 700px;
   display: flex;
   justify-content: space-between;
-  line-height: 70px;
+  align-items: center;
 }
 
 .top-bar span{
   padding: 0 12px;
+  line-height: 70px;
 }
 
-.top-bar img, .top-bar button{
-  margin: 20px 15px;
+.box-sx img, .box-dx button{
+  margin: 0px 20px;
 }
-
 
 .top-bar span:hover{
   border-bottom: 1px solid blue;
   cursor: pointer;
 }
 
+/* JUMBOTRON */
 .jumbotron{
   background-color: var(--jumbo-blue);
 }
@@ -110,10 +121,14 @@ h1{
 }
 
 /* MAIN */
-.container{
-  max-width: 1000px;
-  width: 98%;
-  margin: 130px auto;
+/* CARD BOX */
+.top-text a{
+  text-decoration: none;
+  color: black;
+}
+
+.top-text a:hover{
+  text-shadow: 0 0 2px grey;
 }
 
 h2{
@@ -156,7 +171,7 @@ h2{
 }
 
 .main-card{
-  padding: 20px;
+  padding: 15px;
   line-height: 35px;
 }
 
@@ -166,7 +181,7 @@ ul{
 }
 
 .main-card button{
-  margin: 20px auto;
+  margin: 15px auto;
 }
 
 .main-card hr{
@@ -183,11 +198,7 @@ ul{
   color: var(--btn-blue);
 }
 
-h3{
-  font-weight: bold;
-  font-size: 1.7rem;
-}
-
+/* CARD ORIZZONTALE */
 .card-long{
   border: 1px solid var(--border-grey);
   margin: 40px 0;
@@ -205,8 +216,7 @@ h3{
   margin-top: 30px;
 }
 
-
-
+/* BOX PARTNER */
 .partner-box{
   display: flex;
 }
@@ -228,6 +238,7 @@ h3{
   padding: 30px 0;
 }
 
+/* FEATURE BOX */
 .business-box{
   display: flex;
   flex-wrap: wrap;
@@ -247,6 +258,7 @@ h3{
   width: 50%;
 }
 
+/* BOX QUADRATI */
 .container-square-box{
   display: flex;
 }
@@ -266,12 +278,29 @@ h3{
   width: 50%;
   height: 50%;
   padding: 10%;
+  position: relative;
+  cursor: pointer;
+}
+
+.active{
+  width: 100%;
+  height: 100%;
+  border: 15px solid rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.square-box-inside:hover .active{
+  display: block;
 }
 
 .square-box-inside img{
   width: 100%;
   height: 100%;
   object-fit: contain;
+  filter: invert();
 }
 
 .central hr{
@@ -326,6 +355,7 @@ h3{
   background-color: #FFD830;
 }
 
+/* BOX PROVA */
 .prova-box{
   background-color: var(--jumbo-blue);
   padding: 80px 0;
@@ -349,6 +379,7 @@ h3{
   padding: 10px;
 }
 
+/* SEZIONE DOMANDE */
 .question-box{
   display: flex;
   justify-content: space-between;
@@ -363,6 +394,7 @@ h3{
 .fa-chevron-down{
   padding: 0 20px;
 }
+
 
 /* FOOTER */
 footer{
